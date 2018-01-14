@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trig Functions</title>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="math.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX","output/HTML-CSS"],
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+      messageStyle: "none"
+    });
+  </script>
+
+  <script type="text/javascript" src="MathJax/MathJax.js"></script>
+
+</head>
+<body>
+
+    <div style="display:none">
+    $
+    \newcommand{\sech}{\mathop{\rm sech}\nolimits}
+    \newcommand{\csch}{\mathop{\rm csch}\nolimits}
+    $
+    </div>
+
+    <div class="content">
+
+    <table>
+
+        <tr>
+            <td>
+                <table class="formtable">
+                    <tr>
+                        <td id="A" class="formula">$sin(x)$</td>
+                        <td id="a" class="formula">$csc(x)$</td>
+                    </tr>
+                    <tr>
+                        <td id="B" class="formula">$cos(x)$</td>
+                        <td id="b" class="formula">$sec(x)$</td>
+                    </tr>
+                    <tr>
+                        <td id="C" class="formula">$tan(x)$</td>
+                        <td id="c" class="formula">$cot(x)$</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+
+                <canvas id="canvas" width="200" height="200"></canvas>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="checkbox" id="hyperbolic">hyperbolic</input>
+                <input type="checkbox" id="inverse">inverse</input><br>
+                <button type="button" id="diff">$\frac{d}{dx}$</button>
+                <button type="button" id="int">$\int f(x)\,dx$</button>
+            </td>
+        </tr>
+    </table>
+
+    </div>
+</body>
+</html>
